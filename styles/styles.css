@@ -62,7 +62,7 @@ nav .active {
 nav a:hover {
     color:blue;
 }
-.contacts images:hover {
+.contacts img:hover {
     transform: scale(120%);
     transition-duration: 1s;
 }
@@ -144,7 +144,7 @@ h2 span {
     font-weight: 600;
     text-transform: capitalize;
 }
-.about_images {
+.about_img {
     display: flex;
     flex-direction: column;
     padding-left: 32px;
@@ -154,11 +154,11 @@ h2 span {
 .about article{
     margin: 0;
 }
-.about_images ul {
+.about_img ul {
     display: flex;
     flex-direction: column;
 }
-.about_images images {
+.about_img img {
     max-width: 327px;
 }
 .after {
