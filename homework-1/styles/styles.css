@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+    font-weight: normal; 
+	font-style: normal; 
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('ttf');
+    font-weight: normal; 
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Play';
+    src: url(../fonts/Play/Play-Regular.ttf) format('ttf');
+    font-weight: normal; 
+	font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
 * {
     width: auto;
 	margin: auto;
@@ -6,23 +27,25 @@
     --third-family: "Play", sans-serif;
     font-family: var(--font-family);
 }
-/* body {
-	color: #333333;
-	font-family: 'CorsicaMX';
-	font-size: 17px;
-	line-height: 21px;
-} */
 body {
     background-image: url(../images/header_banka_css.jpg);
     background-repeat: no-repeat;
     background-position: top;
     max-width: 1440px;
 }
-.flex {
+.df_row {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+    flex-direction: row;
+}
+.df_col{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
 }
 a {
     text-decoration:none;
@@ -36,6 +59,9 @@ a {
 header {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
+    /* fixed navbar */
+    /* width: 1440px;
+    position: fixed; */
 }
 nav {
     display: flex;
@@ -68,6 +94,8 @@ nav a:hover {
 }
 .banka {
     padding: 17px 0 0 205px;
+    /* fixednavbar */
+    /* margin-top: 101px; */
 }
 .banka span {
     font-weight: 400;
@@ -160,6 +188,8 @@ h2 span {
 }
 .about_img img {
     max-width: 327px;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
 }
 .after {
     align-self: end;
@@ -167,4 +197,25 @@ h2 span {
 .why_we h2{
     max-width: 432px;
     text-align: center;
+}
+.procedures h2{
+    text-align: center;
+}
+.procedures article{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.18182;
+    text-align: center;
+    color: #fff;
+    border-radius: 120px 4px;
+    width: 344px;
+    height: 456px;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0) 47.4%, rgba(1, 28, 68, 0.73) 82.66%, #011c44 99.06%);
+    display: flex;
+    align-items: end;
+    justify-content: center;    
+}
+.procedures h3{
+    margin: 0;
 }
