@@ -1,36 +1,42 @@
+/* fonts */
 @font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
     font-weight: normal; 
 	font-style: normal; 
 }
 @font-face {
-    font-family: 'Poppins';
-    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('ttf');
-    font-weight: normal; 
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400; 
 	font-style: normal;
 }
 @font-face {
-    font-family: 'Play';
-    src: url(../fonts/Play/Play-Regular.ttf) format('ttf');
-    font-weight: normal; 
+    font-family: Play;
+    src: url(../fonts/Play/Play-Bold.ttf) format('truetype');
+    font-weight: 400; 
 	font-style: normal;
 }
-html{
+/* global tags */
+:root {
     scroll-behavior: smooth;
+    --font-family: Roboto, sans-serif;
+    --second-family: Poppins, sans-serif;
+    --third-family: Play, sans-serif;
+    --brand-color-hero: #2b7fff;
+    --brand-color-acsent: #011c44;
+    --brand-color-secondary: #fff;
 }
 * {
     width: auto;
 	margin: auto;
-    --font-family: "Roboto", sans-serif;
-    --second-family: "Poppins", sans-serif;
-    --third-family: "Play", sans-serif;
     font-family: var(--font-family);
 }
 body {
-    background-image: url(../images/header_banka_css.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../images/header_banka_css.jpg), url(../images/bcg_why_wave.svg);
+    background-repeat: no-repeat, no-repeat;
     background-position: top;
+    background-position-y: 0, 1325px;
     max-width: 1440px;
 }
 .df_row {
@@ -40,22 +46,40 @@ body {
 	align-items: center;
     flex-direction: row;
 }
-.df_col{
+.df_col {
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
     flex-direction: column;
 }
+ul {
+    padding: 0;
+}
+li {
+	list-style:none;
+}
 a {
     text-decoration:none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    color: #011c44;
 }
+button {
+    border: 2px solid var(--brand-color-hero);
+    background-color: var(--brand-color-hero);
+    border-radius: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--brand-color-secondary);
+}
+button:hover {
+    color: var(--brand-color-acsent);
+    background-color: transparent;
+    transition-duration: 500ms;
+}
+/* header with nav */
 header {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
@@ -67,31 +91,25 @@ nav {
     display: flex;
     padding: 32px 0;
 }
-ul {
-    padding: 0;
-}
-li {
-	list-style:none;
-}
-nav ul {
-    display: flex;
-}
 .menu li {
     padding: 0 28px;
 }
 .contacts li {
     padding: 0 16px;
 }
-nav .active {
-    color: #2b7fff;
+.link_header {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--brand-color-acsent);
 }
 nav a:hover {
-    color:blue;
+    color: var(--brand-color-hero);
 }
 .contacts img:hover {
     transform: scale(120%);
     transition-duration: 1s;
 }
+/* banner section */
 .banka {
     padding: 17px 0 0 205px;
     /* fixednavbar */
@@ -113,22 +131,9 @@ h1 {
     margin: 16px 0 40px 0;
 }
 .banka button {
-    background: #2B7FFF;
-    border-radius: 32px;
     width: 219px;
     height: 53px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    color: #fff;
-    border: 0;
 }
-.banka button:hover {
-    color: #2B7FFF;
-    background: #0044ff2a;
-    transition-duration: 500ms;
-}
-
 .banka p {
     font-weight: 400;
     font-size: 12px;
@@ -138,26 +143,34 @@ h1 {
     max-width: 238px;
     margin:14px 0 0 0;
 }
+/* sectioun about us */
 .about {
     display: flex;
-    margin: 126px 100px 0 100px;
+    padding: 126px 100px 0 100px;
+    background-image: url(../images/bcg_star_brand.svg), url(../images/bcg_star_grey.svg), url(../images/bcg_star_secondary.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-x: 95%, 94%, 70%;
+    background-position-y: 21%, 49%, 62%;
 }
 .about_p {
     margin: 0;
+}
+.about_p span {
+    text-transform: capitalize;
 }
 h2 {
     font-family: var(--third-family);
     font-weight: 700;
     font-size: 64px;
-    color: #011c44;
+    color: var(--brand-color-acsent);
 }
 .about h2 {
     max-width: 530px;
     margin: 40px 0 0 0;
+    font-weight: 700;
 }
 h2 span {
-    text-transform: capitalize;
-    color: #2b7fff;
+    color: var(--brand-color-hero);
 }
 .about p {
     margin-top: 40px;
@@ -165,12 +178,8 @@ h2 span {
     font-weight: 400;
     font-size: 22px;
     line-height: 1.72727;
-    color: #011c44;
+    color: var(--brand-color-acsent);
     max-width: 710px;
-}
-.about p span {
-    font-weight: 600;
-    text-transform: capitalize;
 }
 .about_img {
     display: flex;
@@ -179,7 +188,7 @@ h2 span {
     align-items: flex-start;
     width: 499px;
 }
-.about article{
+.about article {
     margin: 0;
 }
 .about_img ul {
@@ -193,15 +202,28 @@ h2 span {
 }
 .after {
     align-self: end;
+    padding-top: 40px;
 }
-.why_we h2{
+/* section wy whe */
+.why_we {
+    padding-top: 176px;
+}
+.why_we h2 {
     max-width: 432px;
     text-align: center;
 }
-.procedures h2{
+.arguments_cards {
+    border-radius: 32px;
+    width: 316px;
+    height: 181px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background: var(--brand-color-secondary);
+}
+/* section with procedures */
+.procedures h2 {
     text-align: center;
 }
-.procedures article{
+.procedures article {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 22px;
@@ -216,6 +238,38 @@ h2 span {
     align-items: end;
     justify-content: center;    
 }
-.procedures h3{
+.procedures h3 {
     margin: 0;
 }
+/* section with contacts map and feedback form */
+.map iframe {
+    width: 605px;
+    height: 481px;
+    border-radius: 32px;
+}
+/* footer */
+footer {
+    background-color: var(--brand-color-acsent);
+    background-image: url(../images/footer_bcg_picture.png), url(../images/footer_bcg_texture.svg);
+    background-position: bottom right, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 278px;
+    color: var(--brand-color-secondary);
+}
+.foot_menu {
+    justify-content: space-evenly;
+    height: 100%;
+}
+.link_footer {
+    color: var(--brand-color-secondary);
+    font-weight: 400;
+    font-size: 18px;
+}
+.link_footer:hover {
+    color: var(--brand-color-hero);
+}
+.link_contakt_footer:hover {
+    transform: scale(120%);
+    transition-duration: 1s;
+}
+/* @media or bootstrap */
