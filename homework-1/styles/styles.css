@@ -26,6 +26,7 @@
     --brand-color-hero: #2b7fff;
     --brand-color-acsent: #011c44;
     --brand-color-secondary: #fff;
+    --howerboard-color: #747272;;
 }
 * {
     width: auto;
@@ -38,6 +39,30 @@ body {
     background-position: top;
     background-position-y: 0, 1325px;
     max-width: 1440px;
+}
+p {
+    margin: 0;
+}
+h1 {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.81429;
+    text-transform: capitalize;
+    color: var(--brand-color-hero);
+    max-width: 529px;
+    margin: 16px 0 40px 0;
+}
+h2 {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--brand-color-hero);
+    text-align: center;
+}
+.h2_acsent {
+    font-family: var(--third-family);
+    color: var(--brand-color-acsent);
 }
 .df_row {
 	display: flex;
@@ -65,6 +90,9 @@ a {
 	justify-content: center;
 	align-items: center;
 }
+.howerboard {
+    color: var(--howerboard-color);
+   }
 button {
     border: 2px solid var(--brand-color-hero);
     background-color: var(--brand-color-hero);
@@ -106,7 +134,7 @@ nav a:hover {
     color: var(--brand-color-hero);
 }
 .contacts img:hover {
-    transform: scale(120%);
+    transform: scale(1.2);
     transition-duration: 1s;
 }
 /* banner section */
@@ -119,16 +147,6 @@ nav a:hover {
     font-weight: 400;
     font-size: 18px;
     color: #011c44;
-}
-h1 {
-    font-family: var(--third-family);
-    font-weight: 700;
-    font-size: 140px;
-    line-height: 0.81429;
-    text-transform: capitalize;
-    color: #2b7fff;
-    max-width: 529px;
-    margin: 16px 0 40px 0;
 }
 .banka button {
     width: 219px;
@@ -152,25 +170,13 @@ h1 {
     background-position-x: 95%, 94%, 70%;
     background-position-y: 21%, 49%, 62%;
 }
-.about_p {
-    margin: 0;
-}
-.about_p span {
+.about_hero {
     text-transform: capitalize;
-}
-h2 {
-    font-family: var(--third-family);
-    font-weight: 700;
-    font-size: 64px;
-    color: var(--brand-color-acsent);
 }
 .about h2 {
     max-width: 530px;
     margin: 40px 0 0 0;
     font-weight: 700;
-}
-h2 span {
-    color: var(--brand-color-hero);
 }
 .about p {
     margin-top: 40px;
@@ -188,7 +194,7 @@ h2 span {
     align-items: flex-start;
     width: 499px;
 }
-.about article {
+.about div {
     margin: 0;
 }
 .about_img ul {
@@ -210,18 +216,42 @@ h2 span {
 }
 .why_we h2 {
     max-width: 432px;
-    text-align: center;
+}
+.why_we div {
+    margin-top: 48px;
+}
+.why_we li{
+    width: 316px;
+    height: 181px;
 }
 .arguments_cards {
     border-radius: 32px;
-    width: 316px;
-    height: 181px;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
     background: var(--brand-color-secondary);
+    padding: 24px 32px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+}
+.arguments_cards img {
+    margin: 0 auto 8px auto;
+    width: 48px;
+    height: 48px;
+}
+.arguments_cards h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-align: center;
+    color: #000;
 }
 /* section with procedures */
+.procedures {
+    margin-top: 96px;
+}
 .procedures h2 {
-    text-align: center;
+    margin-bottom: 49px;
 }
 .procedures article {
     font-family: var(--font-family);
@@ -238,10 +268,19 @@ h2 span {
     align-items: end;
     justify-content: center;    
 }
+.procedures img {
+    position: absolute;
+}
 .procedures h3 {
     margin: 0;
 }
 /* section with contacts map and feedback form */
+.find_us {
+    margin-top: 96px;
+}
+.find_us h2 {
+    margin-bottom: 48px;
+}
 .map iframe {
     width: 605px;
     height: 481px;
@@ -255,6 +294,7 @@ footer {
     background-repeat: no-repeat, no-repeat;
     height: 278px;
     color: var(--brand-color-secondary);
+    margin-top: 96px;
 }
 .foot_menu {
     justify-content: space-evenly;
@@ -269,7 +309,7 @@ footer {
     color: var(--brand-color-hero);
 }
 .link_contakt_footer:hover {
-    transform: scale(120%);
+    transform: scale(1.2);
     transition-duration: 1s;
 }
 /* @media or bootstrap */
