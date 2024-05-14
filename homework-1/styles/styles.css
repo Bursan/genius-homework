@@ -364,18 +364,6 @@ form {
 .sign_up input::placeholder {
     color: var(--brand-color-secondary);
 }
-.howerboard {
-    margin-top: 8px;
-    text-align: center;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    max-width: 213px;
-}
-.howerboard span {
-    text-decoration: underline;
-}
 /* footer */
 footer {
     background-color: var(--brand-color-acsent);
@@ -406,12 +394,6 @@ footer {
 .link_footer:hover {
     color: var(--brand-color-hero);
 }
-.copyright a {
-    color: var(--brand-color-secondary);
-}
-.copyright a:hover {
-    color: var(--brand-color-hero);
-}
 .link_contakt_footer:hover {
     transform: scale(1.2);
     transition-duration: 1s;
@@ -422,11 +404,32 @@ footer {
 .fcontacts {
     max-width: 192px;
 }
-.fcontats ul:first-child {
+.fcontacts ul:first-child {
     align-items: flex-start;
 }
 .fcontacts_icons {
     justify-content: space-between;
     width: 100%;
+}
+.copyright {
+    align-items: flex-start;
+}
+.copyright a {
+    color: var(--brand-color-secondary);
+}
+.copyright a:hover {
+    color: var(--brand-color-hero);
+}
+.howerboard {
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 213px;
+}
+.howerboard span {
+    text-decoration: underline;
 }
 /* @media or bootstrap */
