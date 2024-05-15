@@ -173,11 +173,13 @@ nav a:hover {
 }
 .about_hero {
     text-transform: capitalize;
+    font-family: var(--third-family);
 }
 .about h2 {
     max-width: 530px;
     margin: 40px 0 0 0;
     font-weight: 700;
+    text-align: start;
 }
 .about p {
     margin-top: 40px;
