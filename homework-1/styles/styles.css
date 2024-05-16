@@ -133,6 +133,7 @@ nav {
 }
 nav a:hover {
     color: var(--brand-color-hero);
+    font-weight: 700;
 }
 .contacts img:hover {
     transform: scale(1.2);
@@ -397,6 +398,7 @@ footer {
 }
 .link_footer:hover {
     color: var(--brand-color-hero);
+    font-weight: 700;
 }
 .link_contakt_footer:hover {
     transform: scale(1.2);
@@ -423,6 +425,7 @@ footer {
 }
 .copyright a:hover {
     color: var(--brand-color-hero);
+    font-weight: 700;
 }
 .howerboard {
     margin: 8px 0 0 0;
