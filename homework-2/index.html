@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo.svg" />
+    <title>Студія краси</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/genius-homework/homework-2/">
+            <img src="./images/logo.svg" alt="Логотип студиії краси" />
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="df_row">
+            <li>
+              <a href="#about" class="link_header"> Про нас </a>
+            </li>
+            <li>
+              <a href="#why_we" class="link_header"> Чому ми </a>
+            </li>
+            <li>
+              <a href="#procedures" class="link_header"> Наші процедури </a>
+            </li>
+            <li>
+              <a href="#find_us" class="link_header"> Контакти </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul class="df_row">
+            <li>
+              <a
+                href="tel:+380960000007"
+                class="link_contact_header phone_ring"
+              >
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_phone"></use>
+                </svg>
+                <!-- <img src="./images/nav_phone.svg" alt="Логотип телефону" /> -->
+              </a>
+            </li>
+            <li>
+              <a
+                href="/genius-homework/homework-2/"
+                class="link_contact_header"
+              >
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_facebook"></use>
+                </svg>
+                <!-- <img src="./images/nav_facebook.svg" alt="Логотип facebook" /> -->
+              </a>
+            </li>
+            <li>
+              <a
+                href="/genius-homework/homework-2/"
+                class="link_contact_header"
+              >
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_instagram"></use>
+                </svg>
+                <!-- <img src="./images/nav_instagram.svg" alt="Логотип instagram" /> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banka">
+        <div>
+          <span> Косметологічна клініка </span>
+          <h1 lang="en">beauty zone</h1>
+          <button type="button">
+            <label for="modal_checkbox" class="modal_checkbox">
+              Замовити дзвінок
+            </label>
+          </button>
+          <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about_p">
+          <h2>
+            <span class="h2_acsent">Перевтілюйтесь в</span>
+            <span class="about_hero"> beauty zone!</span>
+          </h2>
+          <p>
+            Наша косметологічна клініка пропонує вам професійні послуги з
+            догляду за шкірою обличчя та тіла.
+          </p>
+          <p>
+            B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
+            приємний сервіс. Наші косметологічні процедури та препарати
+            допоможуть вам підтримувати свою красу та молодість. З нами краса
+            назавжди!
+          </p>
+        </div>
+        <div class="about_img">
+          <div class="before">
+            <img src="./images/before_1.png" alt="Обличчя до процедури" />
+          </div>
+          <div class="after">
+            <img src="./images/after_1.png" alt="Обличчя після процедури" />
+          </div>
+        </div>
+      </section>
+      <section class="why_we" id="why_we">
+        <h2><span class="h2_acsent">Чому люди</span> обирають нас</h2>
+        <div>
+          <ul class="df_row">
+            <li>
+              <article class="arguments_cards">
+                <svg width="48" height="48">
+                  <use href="./images/sprite.svg#icon-why_core"></use>
+                </svg>
+                <!-- <img src="./images/why_core.svg" alt="Іконка атому" /> -->
+                <h3>
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </h3>
+              </article>
+            </li>
+            <li>
+              <article class="arguments_cards">
+                <svg width="48" height="48">
+                  <use href="./images/sprite.svg#icon-why_hardware"></use>
+                </svg>
+                <!-- <img
+                  src="./images/why_hardware.svg"
+                  alt="Іконка проитслового обладнання"
+                /> -->
+                <h3>
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </h3>
+              </article>
+            </li>
+            <li>
+              <article class="arguments_cards">
+                <svg width="48" height="48">
+                  <use href="./images/sprite.svg#icon-why_crown"></use>
+                </svg>
+                <!-- <img src="./images/why_crown.svg" alt="Іконка корони" /> -->
+                <h3>
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </h3>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="procedures testimonial-group" id="procedures">
+        <h2><span class="h2_acsent">Наші</span> процедури</h2>
+        <!-- <div class="container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="slider-wraapper">
+                  <article>
+                    <img src="./images/procedure1.jpg" alt="фото процедури для обличчя">
+                    <h3>
+                      Маски для обличчя
+                    </h3>
+                  </article>
+                </div>
+                <div class="slider-wraapper">
+                  <article>
+                    <img src="./images/procedure2.jpg" alt="фото процедури для обличчя">
+                    <h3>
+                      Ін'єкції для обличчя
+                    </h3>
+                  </article>
+                </div>
+                <div class="slider-wraapper">
+                  <article>
+                    <img src="./images/procedure3.jpg" alt="фото процедури для обличчя">
+                    <h3>
+                      Очищення обличчя
+                    </h3>
+                  </article>
+                </div>
+                <div class="slider-wraapper">
+                  <article>
+                    <img src="./images/procedure4.jpg" alt="фото процедури для обличчя">
+                    <h3>
+                      Lorem ipsum dolor
+                    </h3>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <ul class="df_row">
+          <li>
+            <article>
+              <img
+                src="./images/procedure1.jpg"
+                alt="фото процедури для обличчя"
+              />
+              <h3>Маски для обличчя</h3>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img
+                src="./images/procedure2.jpg"
+                alt="фото процедури для обличчя"
+              />
+              <h3>Ін'єкції для обличчя</h3>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img
+                src="./images/procedure3.jpg"
+                alt="фото процедури для обличчя"
+              />
+              <h3>Очищення обличчя</h3>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img
+                src="./images/procedure4.jpg"
+                alt="фото процедури для обличчя"
+              />
+              <h3>Lorem ipsum dolor</h3>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="find_us" id="find_us">
+        <h2><span class="h2_acsent">Як нас</span> знайти</h2>
+        <div class="df_row">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1715284266680!5m2!1sru!2sua"
+              width="605"
+              height="481"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="sign_up">
+            <form action="/genius-homework/homework-2/">
+              <div class="df_col">
+                <h3>
+                  Запишіться <span>безкоштовно</span> та отримайте подарунок
+                </h3>
+                <ul>
+                  <li>
+                    <input type="text" placeholder="Ваше ім'я та прізвище" />
+                  </li>
+                  <li>
+                    <input type="text" placeholder="Ваш номер телефону" />
+                  </li>
+                  <li>
+                    <input type="text" placeholder="Ваша електронна пошта" />
+                  </li>
+                </ul>
+                <button type="submit">Записатись безкоштовно</button>
+                <p class="howerboard">
+                  Натискаючи на кнопку я погоджуюсь<a
+                    href="/genius-homework/homework-2/"
+                  >
+                    <span>з політикою конфіденційності</span></a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot_menu df_row">
+        <div class="logo">
+          <a href="/genius-homework/homework-2/">
+            <img src="./images/logo.svg" alt="Логотип студиії краси" />
+          </a>
+        </div>
+        <div class="foot_nav">
+          <ul class="df_col">
+            <li>
+              <a href="#about" class="link_footer"> Про нас </a>
+            </li>
+            <li>
+              <a href="#why_we" class="link_footer"> Чому ми </a>
+            </li>
+            <li>
+              <a href="#procedures" class="link_footer"> Наші процедури </a>
+            </li>
+            <li>
+              <a href="#find_us" class="link_footer"> Контакти </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fcontacts df_col">
+          <ul class="df_col">
+            <li>
+              <a href="tel:+380960000007" class="link_footer"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a href="mailto:" class="link_footer">beautyzone@gmail.com</a>
+            </li>
+            <li class="adress">
+              <a
+                href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,+5,+%D0%91%D1%80%D0%BE%D0%B2%D0%B0%D1%80%D1%8B,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+07400/@50.5066355,30.7752007,20z/data=!4m6!3m5!1s0x40d4d97de411b701:0x48116b28f7f00d94!8m2!3d50.5067007!4d30.7752356!16s%2Fg%2F11vc4qk5nf?entry=ttu"
+                target="_blank"
+                class="link_footer"
+                >Україна, м. Київ, вул. Тараса Шевченка 5</a
+              >
+            </li>
+          </ul>
+          <ul class="df_row fcontacts_icons">
+            <li>
+              <a href="tel:+380960000007" class="link_contact_footer">
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_phone"></use>
+                </svg>
+                <!-- <img src="./images/footer_phone.svg" alt="Логотип телефону" /> -->
+              </a>
+            </li>
+            <li>
+              <a
+                href="/genius-homework/homework-2/"
+                class="link_contact_footer"
+              >
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_facebook"></use>
+                </svg>
+                <!-- <img
+                  src="./images/footer_facebook.svg"
+                  alt="Логотип facebook"
+                /> -->
+              </a>
+            </li>
+            <li>
+              <a
+                href="/genius-homework/homework-2/"
+                class="link_contact_footer"
+              >
+                <svg width="32" height="32">
+                  <use href="./images/sprite.svg#icon-nav_instagram"></use>
+                </svg>
+                <!-- <img
+                  src="./images/footer_instagram.svg"
+                  alt="Логотип instagram"
+                /> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright df_col">
+          <span>
+            <a href="/genius-homework/homework-2/">
+              Політика конфіденційності
+            </a>
+          </span>
+          <span class="howerboard"> &copy; 2022 Дані захищені </span>
+        </div>
+      </div>
+    </footer>
+    <input type="checkbox" id="modal_checkbox" />
+    <form action="/genius-homework/homework-2/" class="modal_form">
+      <div class="df_col modal">
+        <h2>Замовити дзвінок</h2>
+        <h3>Запишіться <span>безкоштовно</span> та отримайте подарунок</h3>
+        <ul>
+          <li>
+            <input type="text" placeholder="Ваше ім'я та прізвище" />
+          </li>
+          <li>
+            <input type="text" placeholder="Ваш номер телефону" />
+          </li>
+          <li>
+            <input type="text" placeholder="Ваша електронна пошта" />
+          </li>
+        </ul>
+        <button type="submit">Записатись безкоштовно</button>
+        <p class="howerboard">
+          Натискаючи на кнопку я погоджуюсь
+          <a href="/genius-homework/homework-2/">
+            <span>з політикою конфіденційності</span>
+          </a>
+        </p>
+        <label for="modal_checkbox" class="modal_close">
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-close_modal"></use>
+          </svg>
+        </label>
+      </div>
+    </form>
+    <script src="./js/slider.js" async></script>
+  </body>
+</html>
