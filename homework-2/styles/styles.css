@@ -300,6 +300,35 @@ nav {
   position: absolute;
   z-index: -1;
 }
+/* procedures slider */
+.slider_cards {
+  max-width: 1064px;
+}
+.procedures button,
+.procedures button:hover {
+  background: none;
+  border: 0;
+  border-radius: 0px;
+}
+.slider_right_arrow,
+.slider_left_arrow {
+  stroke: var(--brand-color-acsent);
+  fill: var(--brand-color-acsent);
+  border-radius: 50%;
+}
+.slider_left_arrow {
+  transform: rotate(180deg);
+}
+.slider_right_arrow:hover,
+.slider_left_arrow:hover {
+  background-color: var(--brand-color-hero);
+}
+.slider_right_arrow:active,
+.slider_left_arrow:active {
+  background-color: var(--brand-color-hero);
+  stroke: var(--brand-color-secondary);
+  fill: var(--brand-color-secondary);
+}
 /* section with contacts map and feedback form */
 .find_us {
   margin-top: 96px;
