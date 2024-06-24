@@ -168,6 +168,7 @@ header {
 }
 .why_we__list {
   align-items: flex-start;
+  gap: 15px;
 }
 .why_we li {
   max-width: 316px;
@@ -230,8 +231,13 @@ header {
   z-index: -1;
 }
 /* procedures slider */
+.slider {
+  flex-wrap: nowrap;
+  gap: 15px;
+}
 .slider_cards {
   max-width: 1064px;
+  gap: 16px;
 }
 .procedures button,
 .procedures button:hover {
@@ -264,6 +270,9 @@ header {
 }
 .find_us h2 {
   margin-bottom: 48px;
+}
+.find_us_container {
+  gap: 15px;
 }
 .map iframe {
   width: 605px;
@@ -372,6 +381,7 @@ footer {
   color: var(--brand-color-secondary);
   font-weight: 400;
   font-size: 18px;
+  text-align: start;
 }
 .link_footer:hover {
   color: var(--brand-color-hero);
