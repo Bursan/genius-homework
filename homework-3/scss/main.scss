@@ -166,16 +166,19 @@ header {
 .why_we div {
   margin-top: 48px;
 }
+.why_we__list {
+  align-items: flex-start;
+}
 .why_we li {
-  width: 316px;
-  height: 181px;
+  max-width: 316px;
+  margin: 0 auto;
 }
 .arguments_cards {
   border-radius: 32px;
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
   background: var(--brand-color-secondary);
   padding: 24px 32px;
-  height: 133px;
+  min-height: 133px;
   display: flex;
   flex-direction: column;
 }
@@ -418,10 +421,32 @@ footer {
   text-decoration: underline;
 }
 /* modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 .modal {
   box-sizing: border-box;
-  height: 723px;
-  width: 681px;
+  max-height: 723px;
+  max-width: 680px;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
   padding: 42px 144px;
   background-color: var(--brand-color-acsent);
   border-radius: 32px;
@@ -453,7 +478,7 @@ footer {
 .modal a {
   color: #747272;
 }
-.modal button {
+.modal_subbmit_button {
   border-radius: 32px;
   width: 281px;
   height: 53px;
@@ -461,7 +486,7 @@ footer {
   font-weight: 600;
   font-size: 18px;
 }
-.modal button:hover {
+.modal_subbmit_button:hover {
   color: var(--brand-color-secondary);
 }
 .modal input {
@@ -495,7 +520,6 @@ footer {
   display: none;
 } */
 .modal_form {
-  display: none;
   padding: 0;
   animation: bg 1s ease;
 }
@@ -518,8 +542,8 @@ footer {
   /* animation: scale 0.5s ease; */
 }
 .modal_close {
-  /* width: 16px;
-  height: 16px; */
+  width: 16px;
+  height: 16px;
   position: absolute;
   z-index: 10;
   top: 42px;
@@ -527,6 +551,12 @@ footer {
   /* background-image: url(../images/close_modal.svg);
   background-size: cover; */
   cursor: pointer;
+  background: none;
+  border: none;
+}
+.modal_close:hover {
+  background: none;
+  border: none;
 }
 .modal_close svg {
   stroke: var(--brand-color-secondary);

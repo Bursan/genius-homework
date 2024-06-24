@@ -61,10 +61,10 @@
         <div>
           <span> Косметологічна клініка </span>
           <h1 lang="en">beauty zone</h1>
-          <button type="button">
-            <label for="modal_checkbox" class="modal_checkbox">
-              Замовити дзвінок
-            </label>
+          <button class="modal-btn-open" type="button">
+            Замовити дзвінок
+            <!-- <label for="modal_checkbox" class="modal_checkbox">
+            </label> -->
           </button>
           <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </div>
@@ -98,7 +98,7 @@
       <section class="why_we" id="why_we">
         <h2><span class="h2_acsent">Чому люди</span> обирають нас</h2>
         <div>
-          <ul class="df_row">
+          <ul class="why_we__list df_row">
             <li>
               <article class="arguments_cards">
                 <svg width="48" height="48">
@@ -151,7 +151,7 @@
                   <img
                     src="./images/procedure1.jpg"
                     alt="фото процедури для обличчя"
-                  />
+                 >
                   <h3>Маски для обличчя</h3>
                 </article>
               </div>
@@ -160,7 +160,7 @@
                   <img
                     src="./images/procedure2.jpg"
                     alt="фото процедури для обличчя"
-                  />
+                 >
                   <h3>Ін'єкції для обличчя</h3>
                 </article>
               </div>
@@ -169,7 +169,7 @@
                   <img
                     src="./images/procedure3.jpg"
                     alt="фото процедури для обличчя"
-                  />
+                 >
                   <h3>Очищення обличчя</h3>
                 </article>
               </div>
@@ -178,7 +178,7 @@
                   <img
                     src="./images/procedure4.jpg"
                     alt="фото процедури для обличчя"
-                  />
+                 >
                   <h3>Lorem ipsum dolor</h3>
                 </article>
               </div>
@@ -409,73 +409,88 @@
         </div>
       </div>
     </footer>
-    <input type="checkbox" id="modal_checkbox" />
-    <form action="/genius-homework/homework-3/" class="modal_form">
-      <div class="df_col modal">
-        <h2>Замовити дзвінок</h2>
-        <h3>Запишіться <span>безкоштовно</span> та отримайте подарунок</h3>
-        <ul>
-          <li>
-            <label class="visually-hidden" for="user-name">
-              Ваше ім'я та прізвище
-            </label>
-            <input
-              class="callback_input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Ваше ім'я та прізвище"
-              minlength="5"
-              maxlength="40"
-              required
-              pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
-            />
-          </li>
-          <li>
-            <label class="visually-hidden" for="user-phone">
-              Ваш номер телефону
-            </label>
-            <input
-              class="callback_input"
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              minlength="13"
-              maxlength="13"
-              placeholder="Ваш номер телефону"
-              required
-              pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            />
-          </li>
-          <li>
-            <label class="visually-hidden" for="user-mail">
-              Ваша електронна пошта
-            </label>
-            <input
-              class="callback_input"
-              type="email"
-              name="user-mail"
-              id="user-mail"
-              placeholder="Ваша електронна пошта"
-              required
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-            />
-          </li>
-        </ul>
-        <button type="submit">Записатись безкоштовно</button>
-        <p class="howerboard">
-          Натискаючи на кнопку я погоджуюсь
-          <a href="/genius-homework/homework-3/">
-            <span>з політикою конфіденційності</span>
-          </a>
-        </p>
-        <label for="modal_checkbox" class="modal_close">
-          <svg width="18" height="18">
-            <use href="./images/sprite.svg#icon-close_modal"></use>
-          </svg>
-        </label>
+    <!-- <input type="checkbox" id="modal_checkbox" class="visually-hidden"> -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <form
+          action="/genius-homework/homework-3/"
+          class="backdrope modal_form"
+        >
+          <div class="df_col">
+            <h2>Замовити дзвінок</h2>
+            <h3>Запишіться <span>безкоштовно</span> та отримайте подарунок</h3>
+            <ul>
+              <li>
+                <label class="visually-hidden" for="modal_user-name">
+                  Ваше ім'я та прізвище
+                </label>
+                <input
+                  class="callback_input"
+                  type="text"
+                  name="user-name"
+                  id="modal_user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                  minlength="5"
+                  maxlength="40"
+                  required
+                  pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
+                />
+              </li>
+              <li>
+                <label class="visually-hidden" for="modal_user-phone">
+                  Ваш номер телефону
+                </label>
+                <input
+                  class="callback_input"
+                  type="tel"
+                  name="user-phone"
+                  id="modal_user-phone"
+                  minlength="13"
+                  maxlength="13"
+                  placeholder="Ваш номер телефону"
+                  required
+                  pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
+              </li>
+              <li>
+                <label class="visually-hidden" for="modal_user-mail">
+                  Ваша електронна пошта
+                </label>
+                <input
+                  class="callback_input"
+                  type="email"
+                  name="modal_user-mail"
+                  id="modal_user-mail"
+                  placeholder="Ваша електронна пошта"
+                  required
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                />
+              </li>
+            </ul>
+            <button class="modal_subbmit_button" type="submit">
+              Записатись безкоштовно
+            </button>
+            <p class="howerboard">
+              Натискаючи на кнопку я погоджуюсь
+              <a href="/genius-homework/homework-3/">
+                <span>з політикою конфіденційності</span>
+              </a>
+            </p>
+            <button type="button" class="modal_close modal-btn-close">
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-close_modal"></use>
+              </svg>
+            </button>
+            <!-- <label for="modal_checkbox" class="modal_close">
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-close_modal"></use>
+              </svg>
+            </label> -->
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
