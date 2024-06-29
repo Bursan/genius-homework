@@ -1,0 +1,58 @@
+.slider {
+  flex-wrap: nowrap;
+  gap: 15px;
+
+  &__cards {
+    max-width: 1064px;
+    gap: 16px;
+
+    &__item {
+      display: flex;
+      border-radius: 4px 120px;
+      width: 344px;
+      height: 456px;
+      background: linear-gradient(
+        180deg,
+        rgba(1, 28, 68, 0) 47.4%,
+        rgba(1, 28, 68, 0.73) 82.66%,
+        #011c44 99.06%
+      );
+      align-items: flex-end;
+      justify-content: center;
+    }
+    &__text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.18;
+      text-align: center;
+      color: var(--brand-color-secondary);
+      margin: 0 0 32px 0;
+      max-width: 152px;
+    }
+    &__image {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  &__right_arrow,
+  &__left_arrow {
+    stroke: var(--brand-color-acsent);
+    fill: var(--brand-color-acsent);
+    border-radius: 50%;
+    background: none;
+    border: 0;
+    max-height: 44px;
+    max-width: 44px;
+    padding: 0;
+  }
+  &__left_arrow {
+    transform: rotate(180deg);
+  }
+  &__right_arrow:active,
+  &__left_arrow:active {
+    background-color: var(--brand-color-hero);
+    stroke: var(--brand-color-secondary);
+    fill: var(--brand-color-secondary);
+  }
+}

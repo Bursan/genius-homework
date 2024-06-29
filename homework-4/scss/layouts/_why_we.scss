@@ -1,0 +1,39 @@
+.why_we {
+  padding-top: 176px;
+
+  & .container-title {
+    max-width: 432px;
+  }
+
+  &__list {
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 48px;
+
+    &__item {
+      max-width: 316px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.arguments_cards {
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: var(--brand-color-secondary);
+  padding: 24px 32px;
+  min-height: 133px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 8px auto;
+  fill: var(--brand-color-hero);
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-align: center;
+    color: #000;
+  }
+}

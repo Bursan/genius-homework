@@ -1,0 +1,62 @@
+.about {
+  display: flex;
+  padding: 126px 100px 0 100px;
+  background-image: url(../images/bcg_star_brand.svg),
+    url(../images/bcg_star_grey.svg), url(../images/bcg_star_secondary.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position-x: 95%, 94%, 70%;
+  background-position-y: 21%, 49%, 62%;
+  background-size: 35px, 16px, 56px;
+  animation: star 3s ease-in-out 0s infinite;
+  margin: 0;
+
+  &__title {
+    max-width: 530px;
+    margin: 40px 0 0 0;
+    font-weight: 700;
+    text-align: start;
+  }
+  &__paragraph {
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.72727;
+    color: var(--brand-color-acsent);
+    max-width: 710px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    align-items: flex-start;
+    width: 499px;
+
+    &__before,
+    &__after {
+      max-width: 327px;
+      border-radius: 50%;
+      box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+      margin: 0;
+    }
+    &__after {
+      align-self: end;
+      padding-top: 40px;
+    }
+  }
+}
+
+@keyframes star {
+  0% {
+    background-size: 35px, 16px, 56px;
+  }
+  25% {
+    background-size: 35px, 16px, 56px;
+  }
+  50% {
+    background-size: 15px, 48px, 19px;
+  }
+  100% {
+    background-size: 35px, 16px, 56px;
+  }
+}

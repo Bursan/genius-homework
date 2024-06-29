@@ -1,0 +1,52 @@
+.header {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+  padding: 32px 0;
+
+  &__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 16px;
+    align-items: center;
+  }
+  &__logo {
+    margin: 0;
+  }
+  &__menu,
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+  &__menu {
+    gap: 16px 56px;
+    max-width: 1000px;
+  }
+  &__contacts {
+    gap: 32px;
+    flex-shrink: 0;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--brand-color-acsent);
+  }
+  &__link:hover {
+    color: var(--brand-color-hero);
+    font-weight: 700;
+  }
+  &__contact-link {
+    fill: var(--brand-color-acsent);
+    transition-duration: 2s;
+  }
+  &__contact-link:hover {
+    // color: var(--brand-color-hero);
+    font-weight: 700;
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    animation: none;
+    fill: var(--brand-color-hero);
+  }
+}

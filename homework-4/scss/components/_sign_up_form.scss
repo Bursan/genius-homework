@@ -1,0 +1,73 @@
+.sign_up_form {
+  height: 482px;
+  width: 422px;
+  background-color: var(--brand-color-acsent);
+  border-radius: 32px;
+  background-image: url(../images/sign_up_texture.svg);
+  padding: 48px 56px;
+
+  &__title {
+    color: var(--brand-color-secondary);
+    text-align: center;
+    max-width: 274px;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin-bottom: 32px;
+
+    &--acsent {
+      text-decoration: underline;
+      color: var(--brand-color-hero);
+    }
+  }
+  &__input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    width: 310px;
+    height: 52px;
+    padding-left: 24px;
+    color: var(--brand-color-secondary);
+    border: 2px solid #747272;
+    border-radius: 32px;
+    width: 310px;
+    display: flex;
+    outline: none;
+
+    &:focus {
+      background-color: var(--howerboard-color);
+    }
+    &::placeholder {
+      color: var(--brand-color-secondary);
+    }
+  }
+  &__copyright {
+    color: var(--howerboard-color);
+    margin-top: 8px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 213px;
+
+    &--acsent {
+      color: var(--howerboard-color);
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    border-radius: 32px;
+    width: 281px;
+    height: 53px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+
+    .sign_up_form &:hover {
+      color: var(--brand-color-secondary);
+    }
+  }
+}

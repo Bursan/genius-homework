@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo.svg" />
+    <title>Студія краси</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__navbar">
+        <a class="header__logo logo" href="/genius-homework/homework-4/">
+          <img src="./images/logo.svg" alt="Логотип студиії краси" />
+        </a>
+        <ul class="header__menu df_row">
+          <li>
+            <a href="#about" class="header__link"> Про нас </a>
+          </li>
+          <li>
+            <a href="#why_we" class="header__link"> Чому ми </a>
+          </li>
+          <li>
+            <a href="#procedures" class="header__link"> Наші процедури </a>
+          </li>
+          <li>
+            <a href="#find_us" class="header__link"> Контакти </a>
+          </li>
+        </ul>
+        <ul class="header__contacts df_row">
+          <li>
+            <a href="tel:+380960000007" class="phone_ring header__contact-link">
+              <svg class="phone_ring__image" width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/genius-homework/homework-4/" class="header__contact-link">
+              <svg width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/genius-homework/homework-4/" class="header__contact-link">
+              <svg width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banka">
+        <div>
+          <span class="banka__title-description"> Косметологічна клініка </span>
+          <h1 lang="en">beauty zone</h1>
+          <button
+            class="callback_btn banka__button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
+          <p class="banka__text">
+            Запишись та отримай безкоштовну консультацію нашого косметолога
+          </p>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__text">
+          <h2 class="container-title about__title">
+            Перевтілюйтесь в
+            <span class="container-title--hero text--capitalize">
+              beauty zone!
+            </span>
+          </h2>
+          <p class="about__paragraph">
+            Наша косметологічна клініка пропонує вам професійні послуги з
+            догляду за шкірою обличчя та тіла.
+          </p>
+          <p class="about__paragraph">
+            B <span class="text--bold">beauty zone</span> ми гарантуємо найвищі
+            стандарти якості та приємний сервіс. Наші косметологічні процедури
+            та препарати допоможуть вам підтримувати свою красу та молодість. З
+            нами краса назавжди!
+          </p>
+        </div>
+        <div class="about__img">
+          <!-- <div class="about__img--before">
+            <img src="./images/before_1.png" alt="Обличчя до процедури" />
+          </div>
+          <div class="about__img--after">
+            <img src="./images/after_1.png" alt="Обличчя після процедури" />
+          </div> -->
+          <img
+            class="about__img__before"
+            src="./images/before_1.png"
+            alt="Обличчя до процедури"
+          />
+          <img
+            class="about__img__after"
+            src="./images/after_1.png"
+            alt="Обличчя після процедури"
+          />
+        </div>
+      </section>
+      <section class="why_we" id="why_we">
+        <h2 class="container-title">
+          Чому люди
+          <span class="container-title--hero"> обирають нас </span>
+        </h2>
+
+        <ul class="why_we__list df_row">
+          <li class="why_we__list__item">
+            <article class="arguments_cards">
+              <svg width="48" height="48">
+                <use href="./images/sprite.svg#icon-why_core"></use>
+              </svg>
+              <p class="arguments_cards__title">
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </article>
+          </li>
+          <li class="why_we__list__item">
+            <article class="arguments_cards">
+              <svg width="48" height="48">
+                <use href="./images/sprite.svg#icon-why_hardware"></use>
+              </svg>
+              <p class="arguments_cards__title">
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </article>
+          </li>
+          <li class="why_we__list__item">
+            <article class="arguments_cards">
+              <svg width="48" height="48">
+                <use href="./images/sprite.svg#icon-why_crown"></use>
+              </svg>
+              <p class="arguments_cards__title">
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="procedures testimonial-group" id="procedures">
+        <h2 class="container-title">
+          Наші
+          <span class="container-title--hero">процедури</span>
+        </h2>
+        <div class="slider df_row">
+          <button type="button" class="slider__right_arrow">
+            <svg width="44" height="44">
+              <use href="./images/sprite.svg#icon-slider_arrow"></use>
+            </svg>
+          </button>
+          <ul class="slider__cards df_row">
+            <li>
+              <article class="slider__cards__item">
+                <img
+                  class="slider__cards__image"
+                  src="./images/procedure1.jpg"
+                  alt="фото процедури для обличчя"
+                />
+                <p class="slider__cards__text">Маски для обличчя</p>
+              </article>
+            </li>
+            <li>
+              <article class="slider__cards__item">
+                <img
+                  class="slider__cards__image"
+                  src="./images/procedure2.jpg"
+                  alt="фото процедури для обличчя"
+                />
+                <p class="slider__cards__text">Ін'єкції для обличчя</p>
+              </article>
+            </li>
+            <li>
+              <article class="slider__cards__item">
+                <img
+                  class="slider__cards__image"
+                  src="./images/procedure3.jpg"
+                  alt="фото процедури для обличчя"
+                />
+                <p class="slider__cards__text">Очищення обличчя</p>
+              </article>
+            </li>
+            <li>
+              <article class="slider__cards__item">
+                <img
+                  class="slider__cards__image"
+                  src="./images/procedure4.jpg"
+                  alt="фото процедури для обличчя"
+                />
+                <p class="slider__cards__text">Lorem ipsum dolor</p>
+              </article>
+            </li>
+          </ul>
+          <button type="button" class="slider__left_arrow">
+            <svg width="44" height="44">
+              <use href="./images/sprite.svg#icon-slider_arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="find_us" id="find_us">
+        <h2 class="container-title find_us__title">
+          Як нас
+          <span class="container-title--hero">знайти</span>
+        </h2>
+        <div class="find_us__container df_row">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1715284266680!5m2!1sru!2sua"
+            width="605"
+            height="481"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form class="sign_up_form" name="callback" autocomplete="on">
+            <div class="df_col">
+              <h3 class="sign_up_form__title">
+                Запишіться
+                <span class="sign_up_form__title--acsent">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <ul>
+                <li>
+                  <label class="visually-hidden" for="user-name">
+                    Ваше ім'я та прізвище
+                  </label>
+                  <input
+                    class="sign_up_form__input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    minlength="5"
+                    maxlength="40"
+                    required
+                    pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
+                  />
+                </li>
+                <li>
+                  <label class="visually-hidden" for="user-phone">
+                    Ваш номер телефону
+                  </label>
+                  <input
+                    class="sign_up_form__input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    minlength="13"
+                    maxlength="13"
+                    placeholder="Ваш номер телефону"
+                    required
+                    pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                </li>
+                <li>
+                  <label class="visually-hidden" for="user-mail">
+                    Ваша електронна пошта
+                  </label>
+                  <input
+                    class="sign_up_form__input"
+                    type="email"
+                    name="user-mail"
+                    id="user-mail"
+                    placeholder="Ваша електронна пошта"
+                    required
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  />
+                </li>
+              </ul>
+              <button class="callback_btn sign_up_form__btn" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="sign_up_form__copyright">
+                Натискаючи на кнопку я погоджуюсь
+                <a href="/genius-homework/homework-4/">
+                  <span class="sign_up_form__copyright--acsent">
+                    з політикою конфіденційності
+                  </span>
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer df_row">
+      <div class="footer__logo m0fs">
+        <a href="/genius-homework/homework-4/">
+          <img src="./images/logo.svg" alt="Логотип студиії краси" />
+        </a>
+      </div>
+      <ul class="footer__nav df_col m0fs">
+        <li class="footer__nav__item">
+          <a href="#about" class="footer__link"> Про нас </a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#why_we" class="footer__link"> Чому ми </a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#procedures" class="footer__link"> Наші процедури </a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#find_us" class="footer__link"> Контакти </a>
+        </li>
+      </ul>
+      <div class="footer__container df_col m0fs">
+        <ul class="footer__container__contacts df_col">
+          <li class="footer__container__contacts__item">
+            <a href="tel:+380960000007" class="footer__link"
+              >+ 38 (096) 000 00 07</a
+            >
+          </li>
+          <li class="footer__container__contacts__item">
+            <a href="mailto:" class="footer__link">beautyzone@gmail.com</a>
+          </li>
+          <li class="footer__container__contacts__item">
+            <a
+              href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,+5,+%D0%91%D1%80%D0%BE%D0%B2%D0%B0%D1%80%D1%8B,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+07400/@50.5066355,30.7752007,20z/data=!4m6!3m5!1s0x40d4d97de411b701:0x48116b28f7f00d94!8m2!3d50.5067007!4d30.7752356!16s%2Fg%2F11vc4qk5nf?entry=ttu"
+              target="_blank"
+              class="footer__link"
+              >Україна, м. Київ, вул. Тараса Шевченка 5</a
+            >
+          </li>
+        </ul>
+        <ul class="df_row footer__container__icons">
+          <li class="footer__container__icons__item">
+            <a href="tel:+380960000007" class="footer__link phone_ring">
+              <svg class="phone_ring__image" width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__container__icons__item">
+            <a href="/genius-homework/homework-4/" class="footer__link">
+              <svg width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__container__icons__item">
+            <a href="/genius-homework/homework-4/" class="footer__link">
+              <svg width="32" height="32">
+                <use href="./images/sprite.svg#icon-nav_instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright df_col m0fs">
+        <a class="footer__copyright__link" href="/genius-homework/homework-4/">
+          Політика конфіденційності
+        </a>
+        <span class="footer__copyright__link--acsent">
+          &copy; 2022 Дані захищені
+        </span>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <form action="/genius-homework/homework-4/" class="modal__form">
+          <div class="df_col">
+            <h2 class="modal__main_title">Замовити дзвінок</h2>
+            <h3 class="modal__slave_title">
+              Запишіться
+              <span class="modal__slave_title--acsent">безкоштовно</span> та
+              отримайте подарунок
+            </h3>
+            <ul>
+              <li>
+                <label class="visually-hidden" for="modal_user-name">
+                  Ваше ім'я та прізвище
+                </label>
+                <input
+                  class="modal__input"
+                  type="text"
+                  name="user-name"
+                  id="modal_user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                  minlength="5"
+                  maxlength="40"
+                  required
+                  pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
+                />
+              </li>
+              <li>
+                <label class="visually-hidden" for="modal_user-phone">
+                  Ваш номер телефону
+                </label>
+                <input
+                  class="modal__input"
+                  type="tel"
+                  name="user-phone"
+                  id="modal_user-phone"
+                  minlength="13"
+                  maxlength="13"
+                  placeholder="Ваш номер телефону"
+                  required
+                  pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
+              </li>
+              <li>
+                <label class="visually-hidden" for="modal_user-mail">
+                  Ваша електронна пошта
+                </label>
+                <input
+                  class="modal__input"
+                  type="email"
+                  name="modal_user-mail"
+                  id="modal_user-mail"
+                  placeholder="Ваша електронна пошта"
+                  required
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                />
+              </li>
+            </ul>
+            <button class="callback_btn modal__subbmit_button" type="submit">
+              Записатись безкоштовно
+            </button>
+            <p class="modal__copyright">
+              Натискаючи на кнопку я погоджуюсь
+              <a class="modal__link" href="/genius-homework/homework-4/">
+                <span class="modal__copyright--acsent"
+                  >з політикою конфіденційності</span
+                >
+              </a>
+            </p>
+            <button type="button" class="modal__close modal-btn-close">
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-close_modal"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

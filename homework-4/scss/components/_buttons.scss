@@ -1,0 +1,18 @@
+button:hover {
+  cursor: pointer;
+}
+.callback_btn {
+  border: 2px solid var(--brand-color-hero);
+  background-color: var(--brand-color-hero);
+  border-radius: 32px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--brand-color-secondary);
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: var(--brand-color-acsent);
+    background-color: transparent;
+  }
+}
