@@ -1,10 +1,10 @@
 .sign_up_form {
-  height: 482px;
   width: 422px;
   background-color: var(--brand-color-acsent);
   border-radius: 32px;
   background-image: url(../images/sign_up_texture.svg);
   padding: 48px 56px;
+  margin: auto;
 
   &__title {
     color: var(--brand-color-secondary);
@@ -26,13 +26,12 @@
     font-size: 13px;
     margin-bottom: 16px;
     background-color: transparent;
-    width: 310px;
-    height: 52px;
+    min-width: 310px;
+    min-height: 52px;
     padding-left: 24px;
     color: var(--brand-color-secondary);
     border: 2px solid #747272;
     border-radius: 32px;
-    width: 310px;
     display: flex;
     outline: none;
 

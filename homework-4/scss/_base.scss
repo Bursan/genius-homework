@@ -1,6 +1,4 @@
 * {
-  width: auto;
-  margin: auto;
   font-family: var(--font-family);
 }
 body {
@@ -9,11 +7,15 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: top;
   background-position-y: 0, 1325px;
+}
+.container {
   max-width: 1440px;
+  margin: auto;
+  // display: block;
 }
-p {
-  margin: 0;
-}
+// p {
+//   margin: 0;
+// }
 h1 {
   font-family: var(--third-family);
   font-weight: 700;

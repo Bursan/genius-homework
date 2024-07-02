@@ -5,6 +5,10 @@
 
   &__image {
     animation: phonering_scale 2s ease-in-out 2s infinite;
+    &:hover {
+      animation: none;
+      transform: scale(1.2);
+    }
   }
 }
 @keyframes phone_ring {

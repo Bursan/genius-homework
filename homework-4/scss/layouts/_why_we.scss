@@ -3,16 +3,19 @@
 
   & .container-title {
     max-width: 432px;
+    margin: auto;
   }
 
   &__list {
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
     margin-top: 48px;
+    justify-content: space-between;
+    padding: 0 190px;
 
     &__item {
       max-width: 316px;
-      margin: 0 auto;
+      margin: auto;
     }
   }
 }
@@ -25,8 +28,12 @@
   min-height: 133px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 8px auto;
+  align-items: center;
   fill: var(--brand-color-hero);
+
+  & > svg {
+    margin: 8px auto;
+  }
 
   &__title {
     font-family: var(--font-family);
@@ -35,5 +42,9 @@
     line-height: 1.33333;
     text-align: center;
     color: #000;
+    margin: 0;
+  }
+  &__title:not(:last-child) {
+    margin-bottom: 15px;
   }
 }

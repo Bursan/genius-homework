@@ -6,7 +6,7 @@
   background-repeat: no-repeat, no-repeat;
   padding: 56px 100px;
   color: var(--brand-color-secondary);
-  margin: 96px 0 0 0;
+  margin-top: 96px;
 
   justify-content: space-evenly;
   justify-items: start;
@@ -42,6 +42,7 @@
       color: var(--brand-color-hero);
       fill: var(--brand-color-hero);
       font-weight: 700;
+      animation: none;
     }
   }
   &__copyright {

@@ -11,14 +11,13 @@
     align-items: center;
   }
   &__logo {
-    margin: 0;
+    flex-shrink: 0;
   }
   &__menu,
   &__contacts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
   }
   &__menu {
     gap: 16px 56px;
@@ -39,7 +38,9 @@
   }
   &__contact-link {
     fill: var(--brand-color-acsent);
-    transition-duration: 2s;
+    & svg {
+      transition-duration: 0.2s;
+    }
   }
   &__contact-link:hover {
     // color: var(--brand-color-hero);
