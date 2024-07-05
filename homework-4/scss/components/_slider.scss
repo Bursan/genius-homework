@@ -93,3 +93,12 @@
     }
   }
 }
+.swiper-container {
+  min-width: 0;
+}
+.carousel-button {
+  flex-shrink: 0;
+}
+// .swiper-slide {
+//   max-width: 344px;
+// }

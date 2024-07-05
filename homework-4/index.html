@@ -82,41 +82,37 @@
         </div>
       </section>
       <section class="about" id="about">
-        <div class="about__text container">
-          <h2 class="container-title about__title">
-            Перевтілюйтесь в
-            <span class="container-title--hero text--capitalize">
-              beauty zone!
-            </span>
-          </h2>
-          <p class="about__paragraph">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about__paragraph">
-            B <span class="text--bold">beauty zone</span> ми гарантуємо найвищі
-            стандарти якості та приємний сервіс. Наші косметологічні процедури
-            та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
-        </div>
-        <div class="about__img">
-          <!-- <div class="about__img--before">
-            <img src="./images/before_1.png" alt="Обличчя до процедури" />
+        <div class="container df_row">
+          <div class="about__text">
+            <h2 class="container-title about__title">
+              Перевтілюйтесь в
+              <span class="container-title--hero text--capitalize">
+                beauty zone!
+              </span>
+            </h2>
+            <p class="about__paragraph">
+              Наша косметологічна клініка пропонує вам професійні послуги з
+              догляду за шкірою обличчя та тіла.
+            </p>
+            <p class="about__paragraph">
+              B <span class="text--bold">beauty zone</span> ми гарантуємо
+              найвищі стандарти якості та приємний сервіс. Наші косметологічні
+              процедури та препарати допоможуть вам підтримувати свою красу та
+              молодість. З нами краса назавжди!
+            </p>
           </div>
-          <div class="about__img--after">
-            <img src="./images/after_1.png" alt="Обличчя після процедури" />
-          </div> -->
-          <img
-            class="about__img__before"
-            src="./images/before_1.png"
-            alt="Обличчя до процедури"
-          />
-          <img
-            class="about__img__after"
-            src="./images/after_1.png"
-            alt="Обличчя після процедури"
-          />
+          <div class="about__img">
+            <img
+              class="about__img__before"
+              src="./images/before.png"
+              alt="Обличчя до процедури"
+            />
+            <img
+              class="about__img__after"
+              src="./images/after.png"
+              alt="Обличчя після процедури"
+            />
+          </div>
         </div>
       </section>
       <section class="why_we" id="why_we">
@@ -168,15 +164,15 @@
             Наші
             <span class="container-title--hero">процедури</span>
           </h2>
-          <div class="slider">
-            <button
-              type="button"
-              class="carousel-button prev slider__right_arrow"
-            >
-              <svg width="44" height="44">
-                <use href="./images/sprite.svg#icon-slider_arrow"></use>
-              </svg>
-            </button>
+          <div class="slider df_row">
+            <div class="carousel-button next">
+              <button type="button" class="slider__right_arrow">
+                <svg width="44" height="44">
+                  <use href="./images/sprite.svg#icon-slider_arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- <div class="carousel-button prev">назад</div> -->
             <div class="swiper-container">
               <ul class="swiper-wrapper slider__cards">
                 <li class="swiper-slide">
@@ -229,14 +225,14 @@
                 <span class="pagination__button"></span>
               </div>
             </div>
-            <button
-              type="button"
-              class="carousel-button next slider__left_arrow"
-            >
-              <svg width="44" height="44">
-                <use href="./images/sprite.svg#icon-slider_arrow"></use>
-              </svg>
-            </button>
+            <div class="carousel-button prev">
+              <button type="button" class="slider__left_arrow">
+                <svg width="44" height="44">
+                  <use href="./images/sprite.svg#icon-slider_arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- <div class="carousel-button next">вперед</div> -->
           </div>
         </div>
       </section>
