@@ -26,6 +26,10 @@
   &__contacts {
     gap: 32px;
     flex-shrink: 0;
+    &__item {
+      max-height: 32px;
+      max-width: 32px;
+    }
   }
   &__link {
     font-weight: 400;
@@ -43,7 +47,6 @@
     }
   }
   &__contact-link:hover {
-    // color: var(--brand-color-hero);
     font-weight: 700;
     transform: rotate(0deg);
     transform: scale(1.2);

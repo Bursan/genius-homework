@@ -6,6 +6,10 @@
   padding: 48px 56px;
   margin: auto;
 
+  &__container {
+    align-items: center;
+  }
+
   &__title {
     color: var(--brand-color-secondary);
     text-align: center;

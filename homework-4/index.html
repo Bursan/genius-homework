@@ -6,6 +6,10 @@
     <link rel="icon" type="image/png" href="./images/logo.svg" />
     <title>Студія краси</title>
     <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -33,21 +37,21 @@
           </li>
         </ul>
         <ul class="header__contacts df_row">
-          <li>
+          <li class="header__contacts__item">
             <a href="tel:+380960000007" class="phone_ring header__contact-link">
               <svg class="phone_ring__image" width="32" height="32">
                 <use href="./images/sprite.svg#icon-nav_phone"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="header__contacts__item">
             <a href="/genius-homework/homework-4/" class="header__contact-link">
               <svg width="32" height="32">
                 <use href="./images/sprite.svg#icon-nav_facebook"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="header__contacts__item">
             <a href="/genius-homework/homework-4/" class="header__contact-link">
               <svg width="32" height="32">
                 <use href="./images/sprite.svg#icon-nav_instagram"></use>
@@ -164,55 +168,71 @@
             Наші
             <span class="container-title--hero">процедури</span>
           </h2>
-          <div class="slider df_row">
-            <button type="button" class="slider__right_arrow">
+          <div class="slider">
+            <button
+              type="button"
+              class="carousel-button prev slider__right_arrow"
+            >
               <svg width="44" height="44">
                 <use href="./images/sprite.svg#icon-slider_arrow"></use>
               </svg>
             </button>
-            <ul class="slider__cards df_row">
-              <li>
-                <article class="slider__cards__item">
-                  <img
-                    class="slider__cards__image"
-                    src="./images/procedure1.jpg"
-                    alt="фото процедури для обличчя"
-                  />
-                  <p class="slider__cards__text">Маски для обличчя</p>
-                </article>
-              </li>
-              <li>
-                <article class="slider__cards__item">
-                  <img
-                    class="slider__cards__image"
-                    src="./images/procedure2.jpg"
-                    alt="фото процедури для обличчя"
-                  />
-                  <p class="slider__cards__text">Ін'єкції для обличчя</p>
-                </article>
-              </li>
-              <li>
-                <article class="slider__cards__item">
-                  <img
-                    class="slider__cards__image"
-                    src="./images/procedure3.jpg"
-                    alt="фото процедури для обличчя"
-                  />
-                  <p class="slider__cards__text">Очищення обличчя</p>
-                </article>
-              </li>
-              <li>
-                <article class="slider__cards__item">
-                  <img
-                    class="slider__cards__image"
-                    src="./images/procedure4.jpg"
-                    alt="фото процедури для обличчя"
-                  />
-                  <p class="slider__cards__text">Lorem ipsum dolor</p>
-                </article>
-              </li>
-            </ul>
-            <button type="button" class="slider__left_arrow">
+            <div class="swiper-container">
+              <ul class="swiper-wrapper slider__cards">
+                <li class="swiper-slide">
+                  <article class="slider__cards__item">
+                    <img
+                      class="slider__cards__image"
+                      src="./images/procedure1.jpg"
+                      alt="фото процедури для обличчя"
+                    />
+                    <p class="slider__cards__text">Маски для обличчя</p>
+                    <div class="slider__cards--gradient"></div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="slider__cards__item">
+                    <img
+                      class="slider__cards__image"
+                      src="./images/procedure2.jpg"
+                      alt="фото процедури для обличчя"
+                    />
+                    <p class="slider__cards__text">Ін'єкції для обличчя</p>
+                    <div class="slider__cards--gradient"></div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="slider__cards__item">
+                    <img
+                      class="slider__cards__image"
+                      src="./images/procedure3.jpg"
+                      alt="фото процедури для обличчя"
+                    />
+                    <p class="slider__cards__text">Очищення обличчя</p>
+                    <div class="slider__cards--gradient"></div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="slider__cards__item">
+                    <img
+                      class="slider__cards__image"
+                      src="./images/procedure4.jpg"
+                      alt="фото процедури для обличчя"
+                    />
+                    <p class="slider__cards__text">Lorem ipsum dolor</p>
+                    <div class="slider__cards--gradient"></div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button--active"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="carousel-button next slider__left_arrow"
+            >
               <svg width="44" height="44">
                 <use href="./images/sprite.svg#icon-slider_arrow"></use>
               </svg>
@@ -238,7 +258,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <form class="sign_up_form" name="callback" autocomplete="on">
-              <div class="df_col">
+              <div class="sign_up_form__container df_col">
                 <h3 class="sign_up_form__title">
                   Запишіться
                   <span class="sign_up_form__title--acsent">безкоштовно</span>
@@ -330,7 +350,7 @@
         </li>
       </ul>
       <div class="footer__container df_col m0fs">
-        <ul class="footer__container__contacts df_col">
+        <ul class="footer__container__contacts df_col m0fs">
           <li class="footer__container__contacts__item">
             <a href="tel:+380960000007" class="footer__link"
               >+ 38 (096) 000 00 07</a
@@ -459,6 +479,7 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
   </body>
