@@ -5,9 +5,9 @@ body {
   background-image: url(../images/header_banka_mobile.jpg),
     url(../images/bcg_why_wave_mobile.svg);
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
+  background-size: contain, contain;
   background-position: top;
-  background-position-y: 0, 720px;
+  background-position-y: 0, 816px;
   @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/header_banka.jpg),
       url(../images/bcg_why_wave.svg);
@@ -32,7 +32,11 @@ h1 {
   text-transform: capitalize;
   color: var(--brand-color-hero);
   max-width: 330px;
-  margin: 0 -8px 32px -8px;
+  margin: 0 auto 32px auto;
+
+  @media screen and (min-width: $bp-mobile) {
+    margin: 16px auto 40px auto;
+  }
 
   @media screen and (min-width: $bp-tablet) {
     max-width: 529px;
