@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   padding: 28px 50px;
   color: var(--brand-color-secondary);
-  margin-top: 96px;
+
   gap: 15px;
   justify-items: start;
   display: flex;
@@ -14,18 +14,26 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  @media screen and (min-width: $bp-mobile) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+  }
   @media screen and (min-width: $bp-tablet) {
     padding: 56px 100px;
     background-image: url(../images/footer_bcg_picture.png),
       url(../images/footer_bcg_texture.svg);
     background-position: bottom right, center;
     background-repeat: no-repeat, no-repeat;
+    margin-top: 96px;
   }
-  @media screen and (min-width: $bp-mobile) {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    text-align: start;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/footer_bcg_picture@2x.png),
+      url(../images/footer_bcg_texture.svg);
   }
 
   &__nav {

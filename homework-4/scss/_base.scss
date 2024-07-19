@@ -8,11 +8,23 @@ body {
   background-size: contain, contain;
   background-position: top;
   background-position-y: 0, 816px;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header_banka_mobile@2x.jpg),
+      url(../images/bcg_why_wave_mobile.svg);
+  }
   @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/header_banka.jpg),
       url(../images/bcg_why_wave.svg);
     background-position-y: 0, 1325px;
     background-size: auto;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header_banka@2x.jpg),
+        url(../images/bcg_why_wave.svg);
+    }
   }
 }
 .container {
