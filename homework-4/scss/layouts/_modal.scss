@@ -24,12 +24,15 @@
   width: 100%;
   height: 100%;
   overflow-x: auto;
-  padding: 42px 144px;
+  padding: 42px 22px;
   background-color: var(--brand-color-acsent);
   border-radius: 32px;
   background-image: url(../images/modal_bcg.svg);
   position: relative;
   animation: scale 0.5s ease;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
 
   &__form {
     padding: 0;
@@ -39,12 +42,15 @@
   &__main_title {
     color: var(--brand-color-secondary);
     font-weight: 700;
-    font-size: 64px;
+    font-size: 48px;
     max-width: 435px;
     text-align: center;
     font-family: var(--third-family);
     margin-bottom: 40px;
     line-height: 1.1;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
   }
   &__slave_title {
     color: var(--brand-color-secondary);
@@ -66,13 +72,17 @@
     font-size: 13px;
     margin-bottom: 24px;
     background-color: rgba(0, 0, 0, 0);
-    min-width: 310px;
-    min-height: 52px;
+    min-width: 240px;
+    min-height: 46px;
     padding-left: 24px;
     color: var(--brand-color-secondary);
     border: 2px solid var(--howerboard-color);
     border-radius: 32px;
     outline: none;
+    @media screen and (min-width: $bp-tablet) {
+      min-width: 310px;
+      min-height: 52px;
+    }
 
     &:focus {
       background-color: var(--howerboard-color);
@@ -85,12 +95,15 @@
 
   &__subbmit_button {
     border-radius: 32px;
-    width: 281px;
-    height: 53px;
+    width: 240px;
+    height: 44px;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
-
+    @media screen and (min-width: $bp-tablet) {
+      width: 281px;
+      height: 53px;
+    }
     &:hover {
       color: var(--brand-color-secondary);
     }
@@ -124,12 +137,16 @@
     height: 18px;
     position: absolute;
     z-index: 10;
-    top: 42px;
-    right: 42px;
+    top: 22px;
+    right: 22px;
     cursor: pointer;
     background: none;
     border: none;
     padding: 0;
+    @media screen and (min-width: $bp-tablet) {
+      top: 42px;
+      right: 42px;
+    }
 
     &:hover {
       background: none;

@@ -2,11 +2,18 @@
   font-family: var(--font-family);
 }
 body {
-  background-image: url(../images/header_banka.jpg),
-    url(../images/bcg_why_wave.svg);
+  background-image: url(../images/header_banka_mobile.jpg),
+    url(../images/bcg_why_wave_mobile.svg);
   background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
   background-position: top;
-  background-position-y: 0, 1325px;
+  background-position-y: 0, 720px;
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/header_banka.jpg),
+      url(../images/bcg_why_wave.svg);
+    background-position-y: 0, 1325px;
+    background-size: auto;
+  }
 }
 .container {
   max-width: 1440px;
@@ -19,23 +26,41 @@ body {
 h1 {
   font-family: var(--third-family);
   font-weight: 700;
-  font-size: 140px;
+  font-size: 54px;
+  text-align: center;
   line-height: 0.81429;
   text-transform: capitalize;
   color: var(--brand-color-hero);
-  max-width: 529px;
-  margin: 16px 0 40px 0;
+  max-width: 330px;
+  margin: 0 -8px 32px -8px;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 529px;
+    font-size: 140px;
+    line-height: 0.85185;
+    margin: 16px 0 40px 0;
+    text-align: left;
+  }
 }
 .container-title {
-  font-family: var(--third-family);
-  font-weight: 700;
-  font-size: 64px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
   color: var(--brand-color-acsent);
   text-align: center;
+  @media screen and (min-width: $bp-tablet) {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+  }
 
   &--hero {
-    font-family: var(--third-family);
+    font-family: var(--font-family);
     color: var(--brand-color-hero);
+    font-weight: 700;
+    @media screen and (min-width: $bp-tablet) {
+      font-family: var(--third-family);
+    }
   }
 }
 

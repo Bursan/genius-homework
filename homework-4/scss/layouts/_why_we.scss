@@ -1,9 +1,16 @@
 .why_we {
-  padding-top: 176px;
+  padding: 0 20px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 176px 0 0 0;
+  }
 
   & .container-title {
     max-width: 432px;
     margin: auto;
+    // display: block;
+    // @media screen and (min-width: $bp-tablet) {
+    //   display: inline;
+    // }
   }
 
   &__list {
@@ -11,7 +18,10 @@
     gap: 10px;
     margin-top: 48px;
     justify-content: space-between;
-    padding: 0 190px;
+    padding: 0;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0 190px;
+    }
 
     &__item {
       max-width: 316px;

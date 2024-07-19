@@ -1,15 +1,16 @@
+/* vars */
+
+@import "./utils/variables";
+
 /* default css reset */
 
 @import "./base";
 @import "./reset_css";
 
-/* vars */
-
-@import "./utils/variables";
-
 /* sections */
 
 @import "./layouts/header";
+@import "./layouts/mobile_menu.scss";
 @import "./layouts/banka";
 @import "./layouts/about_us";
 @import "./layouts/why_we";
