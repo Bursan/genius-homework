@@ -1,3 +1,8 @@
+.swiper {
+  max-width: 1400px;
+  width: 100%;
+  height: 500px;
+}
 .slider {
   flex-wrap: nowrap;
   gap: 32px;
@@ -14,7 +19,7 @@
       min-height: 456px;
       align-items: flex-end;
       justify-content: center;
-      // position: relative;
+      position: relative;
     }
     &__text {
       font-family: var(--font-family);
@@ -30,15 +35,15 @@
       bottom: 0;
     }
     &__image {
-      position: absolute;
+      // position: absolute;
       border-radius: 4px 120px;
-      position: absolute;
-      left: 0;
-      top: 0;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
     }
     &--gradient {
       position: absolute;
-      left: 0;
+      // left: 0;
       top: 0;
       z-index: 0;
       background: linear-gradient(
@@ -51,11 +56,12 @@
       height: 100%;
       border-radius: 4px 120px;
       max-width: 344px;
+      max-height: 456px;
     }
   }
   &__right_arrow,
   &__left_arrow {
-    stroke: var(--brand-color-acsent);
+    // stroke: var(--brand-color-acsent);
     fill: var(--brand-color-acsent);
     border-radius: 50%;
     background: none;
@@ -63,9 +69,13 @@
     max-height: 44px;
     max-width: 44px;
     padding: 0;
+    position: absolute;
+    top: 206px;
+    z-index: 10;
   }
   &__left_arrow {
     transform: rotate(180deg);
+    right: 0;
   }
   &__right_arrow:active,
   &__left_arrow:active {
@@ -96,9 +106,22 @@
 .swiper-container {
   min-width: 0;
 }
-.carousel-button {
-  flex-shrink: 0;
-}
-.swiper-slide {
-  width: 344px;
-}
+// .carousel-button {
+//   flex-shrink: 0;
+// }
+// .swiper-slide {
+//   width: 344px;
+// }
+// .swiper-button-prev,
+// .swiper-button-next {
+//   width: 44px;
+//   height: 44px;
+//   position: absolute;
+//   top: 228px;
+//   z-index: 10;
+// }
+
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+//   display: none;
+// }

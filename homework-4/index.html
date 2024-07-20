@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -227,7 +227,7 @@
             Наші
             <span class="container-title--hero">процедури</span>
           </h2>
-          <div class="slider df_row">
+          <!-- <div class="slider df_row">
             <div class="carousel-button next">
               <button type="button" class="slider__right_arrow">
                 <svg width="44" height="44">
@@ -309,6 +309,86 @@
                   <use href="./images/sprite.svg#icon-slider_arrow"></use>
                 </svg>
               </button>
+            </div>
+          </div> -->
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <article class="slider__cards__item">
+                  <img
+                    class="slider__cards__image"
+                    srcset="
+                      ./images/procedure1.jpg    1x,
+                      ./images/procedure1@2x.jpg 2x
+                    "
+                    src="./images/procedure1.jpg"
+                    alt="фото процедури для обличчя"
+                  />
+                  <p class="slider__cards__text">Маски для обличчя</p>
+                  <div class="slider__cards--gradient"></div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="slider__cards__item">
+                  <img
+                    class="slider__cards__image"
+                    srcset="
+                      ./images/procedure2.jpg    1x,
+                      ./images/procedure2@2x.jpg 2x
+                    "
+                    src="./images/procedure2.jpg"
+                    alt="фото процедури для обличчя"
+                  />
+                  <p class="slider__cards__text">Ін'єкції для обличчя</p>
+                  <div class="slider__cards--gradient"></div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="slider__cards__item">
+                  <img
+                    class="slider__cards__image"
+                    srcset="
+                      ./images/procedure3.jpg    1x,
+                      ./images/procedure3@2x.jpg 2x
+                    "
+                    src="./images/procedure3.jpg"
+                    alt="фото процедури для обличчя"
+                  />
+                  <p class="slider__cards__text">Очищення обличчя</p>
+                  <div class="slider__cards--gradient"></div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="slider__cards__item">
+                  <img
+                    class="slider__cards__image"
+                    srcset="
+                      ./images/procedure4.jpg    1x,
+                      ./images/procedure4@2x.jpg 2x
+                    "
+                    src="./images/procedure4.jpg"
+                    alt="фото процедури для обличчя"
+                  />
+                  <p class="slider__cards__text">Lorem ipsum dolor</p>
+                  <div class="slider__cards--gradient"></div>
+                </article>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="slider__right_arrow">
+              <svg width="44" height="44">
+                <use href="./images/sprite.svg#icon-slider_arrow"></use>
+              </svg>
+            </div>
+            <div class="slider__left_arrow">
+              <svg width="44" height="44">
+                <use href="./images/sprite.svg#icon-slider_arrow"></use>
+              </svg>
             </div>
           </div>
         </div>
