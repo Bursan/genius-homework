@@ -79,20 +79,20 @@
 // вивести результат в консоль
 
 //Відпоідь №9
-let user = {};
-user.name = "Oleksandr";
-user.age = 34;
-user.city = "Kramatorsk";
-console.log(user);
-delete user.city;
-user["like flowers"] = false;
-console.log(user);
+// let user = {};
+// user.name = "Oleksandr";
+// user.age = 34;
+// user.city = "Kramatorsk";
+// console.log(user);
+// delete user.city;
+// user["like flowers"] = false;
+// console.log(user);
 
 //***10**
 // За допомогою циклу “for…in” вивести в консоль ключі і значення об*єкта
 
 //Відпоідь №10
-for (key in user) {
-  console.log(key);
-  console.log(user[key]);
-}
+// for (key in user) {
+//   console.log(key);
+//   console.log(user[key]);
+// }
