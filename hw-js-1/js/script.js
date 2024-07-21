@@ -94,4 +94,5 @@ console.log(user);
 //Відпоідь №10
 for (key in user) {
   console.log(key);
+  console.log(user[key]);
 }
