@@ -68,5 +68,5 @@
 // for (item in girls) {
 //   sum += girls[item].age;
 // }
-// sum = sum / girls.length;
+// sum /= girls.length;
 // console.log(`Середній вік дівчат: ${sum}`);
