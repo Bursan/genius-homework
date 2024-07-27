@@ -27,13 +27,12 @@
     background-position: bottom right, center;
     background-repeat: no-repeat, no-repeat;
     margin-top: 96px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/footer_bcg_picture@2x.png),
-      url(../images/footer_bcg_texture.svg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer_bcg_picture@2x.png),
+        url(../images/footer_bcg_texture.svg);
+    }
   }
 
   &__nav {
