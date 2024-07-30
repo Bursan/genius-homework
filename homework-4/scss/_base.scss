@@ -17,11 +17,7 @@ body {
   @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/header_banka.jpg),
       url(../images/bcg_why_wave.svg);
-<<<<<<< HEAD
     background-position-y: 0, 1390px;
-=======
-    background-position-y: 0, 1325px;
->>>>>>> eba125266e30032cd8a7bc22ad22c02bf2b8d398
     background-size: auto;
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -30,7 +26,6 @@ body {
         url(../images/bcg_why_wave.svg);
     }
   }
-<<<<<<< HEAD
   @media screen and (min-width: $bp-4k) {
     background-size: 1440px;
     @media screen and (min-device-pixel-ratio: 2),
@@ -39,8 +34,6 @@ body {
       background-size: 1440px;
   }
   }
-=======
->>>>>>> eba125266e30032cd8a7bc22ad22c02bf2b8d398
 }
 .container {
   max-width: 1440px;

@@ -16,11 +16,7 @@
   text-align: center;
   @media screen and (min-width: $bp-mobile) {
     flex-direction: row;
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-    justify-content: space-evenly;
->>>>>>> eba125266e30032cd8a7bc22ad22c02bf2b8d398
     align-items: flex-start;
     text-align: start;
   }
@@ -36,10 +32,7 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/footer_bcg_picture@2x.png),
         url(../images/footer_bcg_texture.svg);
-<<<<<<< HEAD
         background-size: 17%, auto;
-=======
->>>>>>> eba125266e30032cd8a7bc22ad22c02bf2b8d398
     }
   }
 
