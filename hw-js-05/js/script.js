@@ -13,6 +13,21 @@
 // при натисканні на кнопку css - має видати коротке визначення що це таке
 
 // Відповідь №2
+// function openText() {
+//   console.log(this);
+//   let textCls = this.className + "__text",
+//     blockStl = document.querySelector(`.${textCls}`).style.display;
+//   console.log(textCls);
+//   if (blockStl === "none") {
+//     document.querySelector(`.${textCls}`).style.display = "block";
+//   } else {
+//     document.querySelector(`.${textCls}`).style.display = "none";
+//   }
+// }
+// let buttons = document.querySelectorAll("button");
+// buttons.forEach(function (el) {
+//   el.onclick = openText;
+// });
 
 // --3--
 // Написати функцію магазин, яка отримує назву товару, ціну за кг і кількість товару
