@@ -1,0 +1,15 @@
+:root {
+  scroll-behavior: smooth;
+  --font-family: Roboto, sans-serif;
+  --second-family: Poppins, sans-serif;
+  --third-family: Play, sans-serif;
+  --brand-color-hero: #2b7fff;
+  --brand-color-acsent: #011c44;
+  --brand-color-secondary: #fff;
+  --howerboard-color: #747272;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+$bp-4k: 1920px;

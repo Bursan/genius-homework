@@ -1,0 +1,121 @@
+* {
+  font-family: var(--font-family);
+}
+body {
+  background-image: url(../images/header_banka_mobile.jpg),
+    url(../images/bcg_why_wave_mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top;
+  background-position-y: 0, 816px;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/header_banka_mobile@2x.jpg),
+      url(../images/bcg_why_wave_mobile.svg);
+  }
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/header_banka.jpg),
+      url(../images/bcg_why_wave.svg);
+    background-position-y: 0, 1390px;
+    background-size: auto;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header_banka@2x.jpg),
+        url(../images/bcg_why_wave.svg);
+    }
+  }
+  @media screen and (min-width: $bp-4k) {
+    background-size: 1440px;
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-size: 1440px;
+  }
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  // display: block;
+}
+// p {
+//   margin: 0;
+// }
+h1 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 54px;
+  text-align: center;
+  line-height: 0.81429;
+  text-transform: capitalize;
+  color: var(--brand-color-hero);
+  max-width: 330px;
+  margin: 0 auto 32px auto;
+
+  @media screen and (min-width: $bp-mobile) {
+    margin: 16px auto 40px auto;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 529px;
+    font-size: 140px;
+    line-height: 0.85185;
+    margin: 16px 0 40px 0;
+    text-align: left;
+  }
+}
+.container-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--brand-color-acsent);
+  text-align: center;
+  @media screen and (min-width: $bp-tablet) {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &--hero {
+    font-family: var(--font-family);
+    color: var(--brand-color-hero);
+    font-weight: 700;
+    @media screen and (min-width: $bp-tablet) {
+      font-family: var(--third-family);
+    }
+  }
+}
+
+.df_col,
+.df_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.df_row {
+  flex-direction: row;
+}
+.df_col {
+  flex-direction: column;
+}
+.m0fs {
+  margin: 0;
+  align-items: flex-start;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.5s, font-weight 0.5s;
+  text-align: center;
+}

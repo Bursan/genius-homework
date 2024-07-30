@@ -65,18 +65,17 @@ h2 {
   font-family: var(--third-family);
   color: var(--brand-color-acsent);
 }
+.df_col,
 .df_row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.df_row {
   flex-direction: row;
 }
 .df_col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 ul {
@@ -87,9 +86,10 @@ li {
 }
 a {
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
+  transition: color 0.5s, font-weight 0.5s;
 }
 .howerboard {
   color: var(--howerboard-color);
@@ -132,13 +132,24 @@ nav {
   font-size: 18px;
   color: var(--brand-color-acsent);
 }
-nav a:hover {
+.link_header:hover {
   color: var(--brand-color-hero);
   font-weight: 700;
 }
-.contacts img:hover {
+.link_contact_header {
+  fill: var(--brand-color-acsent);
+}
+.phone_ring svg {
+  transform: scale(1);
+  transform: rotate(0deg);
+  animation: phone_ring 2s ease-in-out 2s infinite;
+}
+.contacts svg:hover {
+  transform: rotate(0deg);
   transform: scale(1.2);
   transition-duration: 1s;
+  animation: none;
+  fill: var(--brand-color-hero);
 }
 /* banner section */
 .banka {
@@ -242,10 +253,9 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
-.arguments_cards img {
+.arguments_cards svg {
   margin: 0 auto 8px auto;
-  width: 48px;
-  height: 48px;
+  fill: var(--brand-color-hero);
 }
 .arguments_cards h3 {
   font-family: var(--font-family);
@@ -289,6 +299,35 @@ nav a:hover {
 .procedures img {
   position: absolute;
   z-index: -1;
+}
+/* procedures slider */
+.slider_cards {
+  max-width: 1064px;
+}
+.procedures button,
+.procedures button:hover {
+  background: none;
+  border: 0;
+  border-radius: 50%;
+}
+.slider_right_arrow,
+.slider_left_arrow {
+  stroke: var(--brand-color-acsent);
+  fill: var(--brand-color-acsent);
+  border-radius: 50%;
+}
+.slider_left_arrow {
+  transform: rotate(180deg);
+}
+.slider_right_arrow:hover,
+.slider_left_arrow:hover {
+  background-color: var(--brand-color-hero);
+}
+.slider_right_arrow:active,
+.slider_left_arrow:active {
+  background-color: var(--brand-color-hero);
+  stroke: var(--brand-color-secondary);
+  fill: var(--brand-color-secondary);
 }
 /* section with contacts map and feedback form */
 .find_us {
@@ -409,9 +448,13 @@ footer {
   color: var(--brand-color-hero);
   font-weight: 700;
 }
-.link_contakt_footer:hover {
+.link_contact_footer {
+  fill: var(--brand-color-secondary);
+}
+.link_contact_footer svg:hover {
   transform: scale(1.2);
   transition-duration: 1s;
+  fill: var(--brand-color-hero);
 }
 .foot_nav ul {
   align-items: flex-start;
@@ -458,6 +501,7 @@ footer {
   border-radius: 32px;
   background-image: url(../images/modal_bcg.svg);
   position: relative;
+  animation: scale 0.5s ease;
 }
 .modal h2 {
   color: var(--brand-color-secondary);
@@ -504,13 +548,10 @@ footer {
   width: 310px;
   height: 52px;
   padding-left: 24px;
-
   color: var(--brand-color-secondary);
-
   border: 2px solid #747272;
   border-radius: 32px;
   width: 310px;
-
   display: flex;
   outline: none;
 }
@@ -520,6 +561,9 @@ footer {
 /* hide checkbox */
 #modal_checkbox {
   display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 /* #modal-checkbox + form {
   display: none;
@@ -527,6 +571,7 @@ footer {
 .modal_form {
   display: none;
   padding: 0;
+  animation: bg 1s ease;
 }
 #modal_checkbox:checked + .modal_form {
   display: flex;
@@ -538,24 +583,27 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  animation: bg 1s ease;
-  background: rgb(30, 140, 250, 0.7);
+  /* animation: bg 1s ease; */
+  background: rgba(1, 31, 74, 0.4);
 }
 #modal_checkbox:checked + form .modal {
-  transition: 0.5s;
+  /* transition: 0.5s; */
   overflow: auto;
-  animation: scale 0.5s ease;
+  /* animation: scale 0.5s ease; */
 }
 .modal_close {
-  width: 16px;
-  height: 16px;
+  /* width: 16px;
+  height: 16px; */
   position: absolute;
   z-index: 10;
   top: 42px;
   right: 42px;
-  background-image: url(../images/close_modal.svg);
-  background-size: cover;
+  /* background-image: url(../images/close_modal.svg);
+  background-size: cover; */
   cursor: pointer;
+}
+.modal_close svg {
+  stroke: var(--brand-color-secondary);
 }
 @keyframes scale {
   0% {
@@ -567,10 +615,41 @@ footer {
 }
 @keyframes bg {
   0% {
-    background: rgba(30, 140, 250, 0);
+    background: rgba(1, 31, 74, 0);
   }
   100% {
-    background: rgba(30, 140, 250, 0.7);
+    background: rgba(1, 31, 74, 0.4);
+  }
+}
+@keyframes phone_ring {
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: rotate(17deg);
+  }
+
+  10%,
+  20%,
+  30%,
+  40% {
+    transform: rotate(-17deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+}
+@keyframes phonering_scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* @media or bootstrap */

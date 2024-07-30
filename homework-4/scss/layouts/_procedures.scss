@@ -1,0 +1,15 @@
+.procedures {
+  margin-top: 40px;
+  padding: 0 20px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: 96px;
+  }
+
+  & .container-title {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 49px;
+    }
+  }
+}

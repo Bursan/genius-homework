@@ -1,0 +1,54 @@
+.banka {
+  & .container {
+    padding: 20px 20px 0 20px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 17px 0 0 205px;
+    }
+  }
+
+  &__title-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #011c44;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      margin: 0;
+      text-align: left;
+    }
+  }
+  &__button {
+    // width: 186px;
+    // height: 44px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    display: block;
+    @media screen and (min-width: $bp-tablet) {
+      // width: 219px;
+      // height: 53px;
+      padding: 16px 32px;
+      margin: 0;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.63636;
+    text-align: center;
+    color: #4a4a4a;
+    max-width: 186px;
+    margin: 8px auto 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 238px;
+      margin: 14px 0 0 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
